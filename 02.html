@@ -22,11 +22,17 @@
 		text-align: left;
 	}
 </style>
+<script type="text/javascript">
+$(function(){
+var targetOffset = $('#text').offset().top;
+$('html,body').delay(7000).animate({scrollTop: targetOffset}, "slow");
+});
+</script>
 </head>
 
 <body>
 	<p><video src="01.mp4" autoplay muted></video></p>
-	<p class="text-area">
+	<p class="text-area" id="text">
 		今回は「AMONG US」というオンラインマルチプレイゲームのことについて書いていきます。<br>
 		YouTubeでのプレイ配信をメインに人気となったこのゲームの内容は、簡単に言うと宇宙での人狼ゲーム。
 	</p>
